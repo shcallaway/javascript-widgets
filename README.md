@@ -1,2 +1,5 @@
-javascript_widgets
-==================
+#JavaScript Widgets
+
+Various client-side apps written in object-oriented model-view-controller JavaScript.
+
+Last Updated: 7/31/14

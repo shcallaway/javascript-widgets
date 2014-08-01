@@ -1,0 +1,32 @@
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="styles/application.css">
+  <link rel="stylesheet" type="text/css" href="styles/vendor/normalize.css">
+  <link href='http://fonts.googleapis.com/css?family=Contrail+One' rel='stylesheet' type='text/css'>
+</head>
+<body>
+  <div class="header">
+    <span class="title">JavaScript Widgets</span>
+    <a href="https://github.com/shcallaway/javascript_widgets">
+      <img src="file:///Users/shcallaway/Desktop/portfolio/js_playground/images/github_logo.png" class="github">
+    </a>
+  </div>
+  <div data-component="racer_container" class="container">
+    <table data-component="track">
+    </table>
+    <div class="label racer_label">Move using keys 1, 2 and 3.</div>
+  </div>
+  <div data-component="dice_container" class="container">
+    <button data-component="add">Add dice!</button>
+    <button data-component="roll">Roll dice!</button>
+    <span class="label dice_label">Let's play dice.</span>
+    <div data-component="dice" class="dice">
+    </div>
+  </div>
+
+  <script language="javascript" type="text/javascript" src="scripts/jquery-1.11.1.min.js"></script>
+  <script language="javascript" type="text/javascript" src="scripts/race.js"></script>
+  <script language="javascript" type="text/javascript" src="scripts/dice.js"></script>
+
+</body>
+</html>

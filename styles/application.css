@@ -1,0 +1,90 @@
+body {
+  margin: 0rem;
+  background: #00CC99;
+  font-family: "Helvetica";
+}
+
+td {
+  background: white;
+  height: 20px;
+  width: 4rem;
+}
+
+.active {
+  background: black;
+  height: 2rem;
+  width: 4rem;
+}
+
+button {
+  background: white;
+  font-size: 0.8rem;
+  width: 4rem;
+  margin-right: 0.2rem;
+  height: 1.8rem;
+  -webkit-box-shadow: -5px 5px 5px 0px rgba(50, 50, 50, 0.29);
+  -moz-box-shadow: -5px 5px 5px 0px rgba(50, 50, 50, 0.29);
+  box-shadow: -5px 5px 5px 0px rgba(50, 50, 50, 0.29);
+  outline: none;
+  border: none;
+}
+
+button:active {
+  background: #E6E6E6;
+}
+
+.header {
+  text-align: center;
+  min-width: 483px;
+  padding: 0.7rem;
+  background: #008F6B;
+}
+
+.title {
+  font-family: 'Contrail One', "sans-serif";
+  font-size: 3rem;
+}
+
+.github {
+  outline: none;
+  float: right;
+  height: 1.7rem;
+  width: 1.7rem;
+}
+
+.container {
+  min-width: 356px;
+  min-height: 10rem;
+  background: #008F6B;
+  margin-top: 2rem;
+  width: 40%;
+  padding: 2rem;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-box-shadow: -5px 5px 5px 0px rgba(50, 50, 50, 0.29);
+  -moz-box-shadow: -5px 5px 5px 0px rgba(50, 50, 50, 0.29);
+  box-shadow: -5px 5px 5px 0px rgba(50, 50, 50, 0.29);
+}
+
+.dice {
+  margin-top: 1rem;
+}
+
+.label {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: lighter;
+}
+
+.dice_label {
+  margin-left: 1rem;
+}
+
+.die {
+  background: white;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  margin: 0.2rem;
+  display: inline-block;
+  text-align: center;
+}

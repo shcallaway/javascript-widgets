@@ -1,0 +1,53 @@
+/* Set the font sizes of input fields and buttons to the same as "normal" text */
+input, select, textarea { font-family: inherit; font-size: 100%; }
+
+/* Same for code and pre elements which unlike the form elements, the browser sizes
+   *up* by default */
+code, pre { font-size: 100%; }
+
+/* Prevent iOS from scaling up body text when the device is rotated into landscape mode */
+html { -webkit-text-size-adjust: 100%; }
+
+/* Ensure all the fancy new html5 elements are rendered as blocks by default */
+article, aside, details, figcaption, figure,
+footer, header, main, nav, section, summary { display: block; }
+
+/* Ensure borders and padding do not increase the size of elements but instead
+   constrian the size of their contents */
+* { box-sizing: border-box }
+
+/* Turn off margins on form controls and preformatted text blocks */
+body, input, select, textarea { margin: 0; }
+
+/* Add a single consistent margin to the bottom of the elements commonly
+   used to markup "document" text */
+h1, h2, h3, h4, h5, h6, p, dl, ol, ul, hr, pre {
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+/* Make horizontal rules 1 pixel high gray lines. No fancy borders or shadows */
+hr { border: none; height: 1px; background: silver; }
+
+/* Strip the styling of form elements down to things that have gray 1px borders */
+input, select, textarea {
+  line-height: inherit;
+  border: 1px solid silver;
+  background: inherit;
+  color: inherit;
+  outline: none;
+  border-radius: 2px;
+  -webkit-border-radius: 2px;
+  -webkit-appearance: none;
+}
+
+button {
+  line-height: inherit;
+  color: inherit;
+  outline: none;
+  -webkit-appearance: none;
+}
+
+select { padding: 0 1px 1px 1px; }
+button { padding: 1px; }
+button:focus, input:focus, select:focus, textarea:focus { border-color: black; }

@@ -41,7 +41,7 @@ function RaceView() {}
 RaceView.prototype = {
   updatePosition: function(player_number) {
     var player_strip = $('[data-component="player' + player_number + '_strip"]')[0].children;
-    for (var i = 0; i < player_strip.length-2; i++) {
+    for (var i = 0; i < player_strip.length-1; i++) {
       if (player_strip[i].className == "active") {
         player_strip[i].className = "";
         player_strip[i + 1].className = "active";

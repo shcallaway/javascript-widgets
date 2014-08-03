@@ -6,14 +6,12 @@ body {
 
 td {
   background: white;
-  height: 20px;
+  height: 2rem;
   width: 4rem;
 }
 
 .active {
   background: black;
-  height: 2rem;
-  width: 4rem;
 }
 
 button {
@@ -53,6 +51,7 @@ button:active {
 }
 
 .container {
+  position: relative;
   min-width: 356px;
   min-height: 10rem;
   background: #008F6B;
@@ -80,6 +79,11 @@ button:active {
   margin-left: 1rem;
 }
 
+.tictactoe_label {
+  text-align: center;
+  margin-top: 1rem;
+}
+
 .die {
   background: white;
   border-radius: 0.2rem;
@@ -87,4 +91,23 @@ button:active {
   margin: 0.2rem;
   display: inline-block;
   text-align: center;
+}
+
+.board {
+  margin: auto;
+  width: 50%;
+  }
+
+.cell {
+  width: 33%;
+  height: 4rem;
+  border: 1px solid #008F6B;
+  display: inline-block;
+  padding-top: 1.5rem;
+  text-align: center;
+  background-color: white;
+}
+
+.cell:active {
+  background: #E6E6E6;
 }

@@ -1,6 +1,6 @@
 #JavaScript Widgets
 
-Various small, client-side apps written in object-oriented model-view-controller JavaScript. I did my best write modularize and completely decouple my code.
+Various small, client-side apps written in object-oriented model-view-controller JavaScript. I did my best to modularize and completely decouple my code from itself.
 
 I'm currently using jQuery, and a third party CSS normalize that I am mostly unhappy with. I am considering replacing both with custom libraries in the future. 
 

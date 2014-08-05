@@ -36,7 +36,7 @@ TicTacToeController.prototype = {
     this.bindListeners();
   },
   bindListeners: function() {
-    $('[data-component="cell"').click(function(event) {
+    $('[data-component="cell"]').click(function(event) {
       if (event.target.innerHTML == "" ) {
         this.view.updateCell(event.target, this.game.currentPlayer.piece);
       }

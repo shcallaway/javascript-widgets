@@ -1,5 +1,5 @@
 var boardDimensions = [3, 3];
-var boardSize = boardDimensions[0] * boardDimensions[1];
+var boardSize = (boardDimensions[0] * boardDimensions[1]);
 
 $(document).ready(function() {
   var controller = new TicTacToeController;

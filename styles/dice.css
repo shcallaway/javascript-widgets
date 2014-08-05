@@ -1,0 +1,16 @@
+.dice_label {
+  margin-left: 1rem;
+}
+
+.dice {
+  margin-top: 1rem;
+}
+
+.die {
+  background: white;
+  border-radius: 0.2rem;
+  padding: 0.8rem 1rem 0.8rem 1rem;
+  margin: 0.2rem;
+  display: inline-block;
+  text-align: center;
+}

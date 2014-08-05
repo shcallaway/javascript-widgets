@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var controller = new DiceController;
-  controller.bindListeners();
+  controller.initialize();
 });
 
 function Die() {this.value = 0;}
@@ -11,12 +11,15 @@ Die.prototype = {
   }
 }
 
-function DiceController(view) {
-  this.dice = [new Die];
+function DiceController() {
+  this.dice = [];
   this.view = new DiceView;
 }
 
 DiceController.prototype = {
+  initialize: function() {
+    this.bindListeners();
+  },
   bindListeners: function() {
     $('[data-component="add"]').on('click', this.addDie.bind(this));
     $('[data-component="roll"]').on('click', this.rollDice.bind(this));
@@ -37,7 +40,7 @@ function DiceView() {}
 
 DiceView.prototype = {
   addDie: function() {
-    $('[data-component="dice"]').append('<div data-component="die" class="die">0</div>');
+    $('[data-component="dice"]').append('<div data-component="die" class="die">1</div>');
   },
   updateDice: function(dice) {
     for (var i = 0; i < $('[data-component="die"]').length; i++) {

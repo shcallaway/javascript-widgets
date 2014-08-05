@@ -41,17 +41,17 @@ function RaceView() {}
 RaceView.prototype = {
   updatePosition: function(player_number) {
     var player_strip = $('[data-component="player' + player_number + '_strip"]')[0].children;
-    for (var i = 0; i < player_strip.length-2; i++) {
-      if (player_strip[i].className == "active") {
+    for (var i = 0; i < player_strip.length-1; i++) {
+      if (player_strip[i].className == "player") {
         player_strip[i].className = "";
-        player_strip[i + 1].className = "active";
+        player_strip[i + 1].className = "player";
         break;
       }
     }
   },
   setTrack: function(trackLength, numPlayers) {
     for (var i = 1; i <= numPlayers; i++) {
-      $('[data-component="track"]').append('<tr data-component="player' + i + '_strip"><td class="active"></td></tr>');
+      $('[data-component="track"]').append('<tr data-component="player' + i + '_strip"><td class="player"></td></tr>');
       for (var j = 1; j < trackLength; j++) {
         $('[data-component="player' + i + '_strip"]').append("<td></td>");
       }

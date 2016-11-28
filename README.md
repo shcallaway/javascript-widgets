@@ -1,3 +1,3 @@
 #JavaScript Widgets
 
-JavaScript Widgets is an exercise in MVC JS consisting of tiny, modular, client-side applications.
+This website is an exercise in model-view-controller Javascript, consisting of tiny, modular, client-side applications.

@@ -1,3 +1,3 @@
-#JavaScript Widgets
+# javascript_widgets
 
-This website is an exercise in model-view-controller Javascript, consisting of tiny, modular, client-side applications.
+An exercise in MVC JS. Little modular, client-side apps.
